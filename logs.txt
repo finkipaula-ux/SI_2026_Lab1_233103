@@ -1,0 +1,17 @@
+*   de1b073 (HEAD -> master) Merge branch 'feature-borrow-book'
+|\
+| *   3a0cc78 (feature-borrow-book) Merge branch 'master' into feature-borrow-book
+| |\
+| * | c38689d (origin/feature-borrow-book) Implement borrow book
+* | |   7ab3be1 Merge branch 'feature-genre-report'
+|\ \ \
+| |_|/
+|/| |
+| * | aa0cee4 (origin/feature-genre-report, feature-genre-report) Implement genre report
+| |/
+* / 7b389d3 Update borrow
+|/
+* d9ee33d (origin/master, origin/feature-search-books, feature-search-books)  Implement book search
+* d9881b2  Add starter code
+* 16ba1c7 Initial commit
+

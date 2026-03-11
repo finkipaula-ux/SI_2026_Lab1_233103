@@ -1,0 +1,216 @@
+4. $ git init 
+
+5. $ git remote add origin https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+
+6. $ touch README.md
+$ git add README.md
+$ git commit -m "Initial commit"
+[master (root-commit) 16ba1c7] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+7. $ git add .
+$ git commit -m " Add starter code"
+[master d9881b2]  Add starter code
+ 1 file changed, 124 insertions(+)
+ create mode 100644 SI2026Lab1Main.java
+
+8. $ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.29 KiB | 1.29 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+Дел 1: Софтверски развој со користење на Git систем за контрола на
+верзии
+
+9.$ git checkout -b feature-search-books
+Switched to a new branch 'feature-search-books'
+
+10. // tuka e implementirana funkcijata public boolean searchBookByTitle(String title). 
+$ git add .
+$ git commit -m " Implement book search"
+[feature-search-books d9ee33d]  Implement book search
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+
+11. $ git push origin feature-search-books
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 474 bytes | 474.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-search-books' on GitHub by visiting:
+remote:      https://github.com/finkipaula-ux/SI_2026_Lab1_233103/pull/new/feature-search-books
+remote:
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+ * [new branch]      feature-search-books -> feature-search-books
+---- Tuka e napraveno pull request na GitHub.
+
+12.$ git merge feature-search-books
+Updating d9881b2..d9ee33d
+Fast-forward
+ SI2026Lab1Main.java | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+
+----Bidejki nemame konflikti, merge se napravi so fast-forward.
+
+13. $  git log --oneline --graph --all
+* d9ee33d (HEAD -> master, origin/feature-search-books, feature-search-books)  Implement book search
+* d9881b2 (origin/master)  Add starter code
+* 16ba1c7 Initial commit
+
+14. $ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+   d9881b2..d9ee33d  master -> master
+
+15.$ git branch feature-borrow-book
+ $ git branch feature-genre-report
+
+16.$ git checkout feature-borrow-book
+Switched to branch 'feature-borrow-book'
+
+----Vo metodot borrowBook ja smeniv porakata vo Borrowed successfully i vo main samo ja povikav funkcijata da se testira so:
+ library.borrowBook("Testing borrowBook."); 
+
+
+$ git add .
+$ git commit -m "Implement borrow book"
+[feature-borrow-book c38689d] Implement borrow book
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+
+17.$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+----Vo metodot borrowBook ja smeniv porakata vo Book checked out,no ovaa promena e na master branch.
+
+$ git add .
+$ git commit -m "Update borrow"
+[master 7b389d3] Update borrow
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+
+
+18.$ git checkout feature-genre-report
+Switched to branch 'feature-genre-report'
+
+
+-------Go implementirav noviot metod  printBooksByGenre vo kodot,ovaa promena e na feature-genre-report.
+
+$ git add .
+$ git commit -m "Implement genre report"
+[feature-genre-report aa0cee4] Implement genre report
+ 1 file changed, 8 insertions(+)
+
+
+
+19.$ git checkout feature-borrow-book
+Switched to branch 'feature-borrow-book'
+
+$ git push origin feature-borrow-book
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 503 bytes | 503.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-borrow-book' on GitHub by visiting:
+remote:      https://github.com/finkipaula-ux/SI_2026_Lab1_233103/pull/new/feature-borrow-book
+remote:
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+ * [new branch]      feature-borrow-book -> feature-borrow-book
+
+
+
+20.$ git checkout feature-genre-report
+Switched to branch 'feature-genre-report'
+
+$ git push origin feature-genre-report
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 446 bytes | 446.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature-genre-report' on GitHub by visiting:
+remote:      https://github.com/finkipaula-ux/SI_2026_Lab1_233103/pull/new/feature-genre-report
+remote:
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+ * [new branch]      feature-genre-report -> feature-genre-report
+
+
+
+21. $ git checkout feature-borrow-book
+Switched to branch 'feature-borrow-book'
+
+$ git merge master
+Auto-merging SI2026Lab1Main.java
+CONFLICT (content): Merge conflict in SI2026Lab1Main.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+22. Pri pojuanje na grankata master so feature-borrow-book, nastana konflikt,vo metodot BorrowBook,go resiv so toa sto racno ja zadrzav linijata Book checked out.Dodeka seuste vo merge napraviv git add i git commit kade me odnese vo text editor za merge konfliktot.Taka go resiv konfliktot.
+
+$ git status
+On branch feature-borrow-book
+nothing to commit, working tree clean
+
+23. $ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+$ git merge feature-genre-report
+Auto-merging SI2026Lab1Main.java
+Merge made by the 'ort' strategy.
+ SI2026Lab1Main.java | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+Vo ovoj slucaj ne nastana konflikt pri spojuvanjeto.Spojuvanjeto bese izvrseno so ort recursive merge ne bese fast-forward.Se kreirase nov merge commit so cel da gi spoi dvete granki.
+
+24.$ git merge feature-borrow-book
+Auto-merging SI2026Lab1Main.java
+CONFLICT (content): Merge conflict in SI2026Lab1Main.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+Nastana konflikt koj racno go resiv vo main funkcijata.Spojuvanjeto bese recursive/ ort merge,a ne fast-forward,zatoa to master i feature-borrow-book imaa razlicni commits i se kreirase nov merge commit.
+
+
+25. $ git push origin master
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.43 KiB | 733.00 KiB/s, done.
+Total 12 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+   d9ee33d..de1b073  master -> master
+
+
+
+26. $ git log --oneline --graph --all
+---Otputot od ovaa komanda e zacuvan vo logs.txt
+
+$ git add .
+$ git commit -m "Final commit"
+
+
+
+
+
+
+
