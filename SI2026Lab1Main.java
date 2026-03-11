@@ -91,6 +91,11 @@ class Library {
     }
 
     public void printBooksByGenre(String genre) {
+        for (Book book : books) {
+            if (book.getGenre().equalsIgnoreCase(genre)) {
+                System.out.println(book);
+            }
+        }
     }
 
     public int countAvailableBooks() {
@@ -130,5 +135,8 @@ public class SI2026Lab1Main {
         } else {
             System.out.println("Book not found.");
         }
+        library.borrowBook("Testing Borrowed Book");
+
+        library.printBooksByGenre("Testing BooksByGenre");
     }
 }
