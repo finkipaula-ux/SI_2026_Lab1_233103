@@ -207,6 +207,23 @@ To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
 
 $ git add .
 $ git commit -m "Final commit"
+[master 1a0b35c] Final commit
+ 2 files changed, 233 insertions(+)
+ create mode 100644 233103.txt
+ create mode 100644 logs.txt
+
+
+27.  $ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.66 KiB | 2.67 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
+   de1b073..1a0b35c  master -> master
+
+
 
 
 
