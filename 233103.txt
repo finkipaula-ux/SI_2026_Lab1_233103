@@ -228,6 +228,85 @@ To https://github.com/finkipaula-ux/SI_2026_Lab1_233103.git
 
 
 
+28.Napraviv fork od repozitoriumot daden od asistentot Marko,gore desno kliknav na fork i potoa na create fork
+
+
+29.$ git clone https://github.com/finkipaula-ux/SI_2026_Lab1_203043.git
+
+-------ova e komandata clone so koja uspesno klonirav.
+
+Cloning into 'SI_2026_Lab1_203043'...
+remote: Enumerating objects: 29, done.
+remote: Counting objects: 100% (29/29), done.
+remote: Compressing objects: 100% (20/20), done.
+remote: Total 29 (delta 9), reused 26 (delta 6), pack-reused 0 (from 0)
+Receiving objects: 100% (29/29), 4.25 KiB | 543.00 KiB/s, done.
+Resolving deltas: 100% (9/9), done.
 
 
 
+
+30.$ cd SI_2026_Lab1_233103
+
+----- so ovaa komanda vleguvam vo file  SI_2026
+
+
+
+$ git checkout -b 233103-library-update
+Switched to a new branch '233103-library-update'
+
+----- kreirav nova granka so checkout -b
+
+
+
+31.  $ touch 233103.txt
+---krirav file so touch
+
+$ nano 233103.txt
+--vo ovaa datoteka napisav ime i prezime i meil
+
+
+32. $ nano SI2026Lab1Main.java  
+--so ovaa komanda ja otvoram java datotekata dodadov komentar tuka -> public class SI2026Lab1Main {
+    //updated by 233103
+
+
+33. git add .
+warning: in the working copy of '233103.txt', LF will be replaced by CRLF the next time Git touches it
+
+$ git commit -m "Add fork contribution"
+[233103-library-update 618a6a8] Add fork contribution
+ 2 files changed, 4 insertions(+)
+ create mode 100644 233103.txt
+
+
+
+
+34. $ git push origin 233103-library-update
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 501 bytes | 501.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for '233103-library-update' on GitHub by visiting:
+remote:      https://github.com/finkipaula-ux/SI_2026_Lab1_203043/pull/new/233103-library-update
+remote:
+To https://github.com/finkipaula-ux/SI_2026_Lab1_203043.git
+ * [new branch]      233103-library-update -> 233103-library-update
+
+
+---so ovaa komanda pravam sinhronizacija
+
+
+35. Prvo go otvoriv fork-ot sto e kreiran na mojot GitHub profil,koj e moja kopija na originalniot proekt. Potoa ja izbrav grankata so napravenite promeni.
+Potoa kliknav na „Compare & pull request“ koe ima funkcija za sporedba na lokalnite promeni so master grankata na orig repo. Vnesov naslov nov vo dve linii. Otkako popolniv se kliknav na create pull request,na toj nacin go kreirav.
+
+
+36.Staviv naslov index-fork vo title poleto,na ovoj nacin skriptata moze da ja prepoznae pravilno mojata lab vezba.
+
+
+
+37.Pod title poleto so naslov leave a comment vo toa pole napisav dve linii

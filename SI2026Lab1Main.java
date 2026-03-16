@@ -123,6 +123,7 @@ class Library {
 }
 
 public class SI2026Lab1Main {
+    //updated by 233103
     public static void main(String[] args) {
         Library library = new Library();
 
@@ -133,7 +134,6 @@ public class SI2026Lab1Main {
 
         System.out.println("Library initialized.");
         boolean found = library.searchBookByTitle("Testing searchBookByTitle.");
-
         if (found) {
             System.out.println("Book found.");
         } else {
